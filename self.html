@@ -79,25 +79,6 @@
     text-decoration: none; /* 去除底線 */
     color: #151515d6; /* 自訂文字顏色，這裡使用紅色(#FF0000)作為範例 */
 }
-.container {
-    width: 75%; /* 內容佔版面的3/4 */
-    margin: 0 auto; /* 將元素置中 */
-    font-size: 20px;
-    display: flex; /* 使用彈性盒模型排列內容 */
-}
-
-
-.text {
-    flex: 1; /* 文字區域佔滿剩餘的寬度 */
-}
-
-.image {
-    margin-left: 30px; /* 調整圖片與文字的間距，這裡設定為20像素 */
-}
-.image img {
-    width: 300px; /* 設定圖片的寬度為200像素 */
-    height: auto; /* 讓高度根據比例自動調整 */
-}
 
     </style>
 </head>
@@ -115,11 +96,10 @@
             <!--導航攔-->
             <div class="flex1" >
 
-                <div class="daohang" > <a href="./index.html">簡介</a> </div>
-                <div class="daohang" > <a href="./teach.html">教學資訊</a></div>
+                <div class="daohang" > <a href="./self.html">簡介</a> </div>
+                <div class="daohang" > <a href="./teach.html">教學影片</a></div>
                 <div class="daohang">  <a href="./clinichour.html">門診時間</a> </div>
-                <div class="daohang">  <a href="./health.html">衛教影片</a> </div>
-                <div class="daohang">  <a href="./market.html">商場</a> </div>
+                <div class="daohang">導航</div>
 
 
 
@@ -138,50 +118,41 @@
 
      <!--主區域-->
     <div class="flex1 flex column">
-      
+        <!--頭部欄-->
+        <div style="height: 60px;z-index: 1;" class="baiSe yinying"></div>
         <!--內容區-->
-        <div class="container" >
-                 
-<div class="container">
-    <div class="text">
-      <p>
+        <div style="overflow: auto;" class="neiRong flex1 flex">
+                     <!--左區-->
+                     <div  style="flex: 3;" class="flex column mg8">
+                        <!--數據區-->
+                        <div class="flex shuQu">
+                            <!--數據區4等分-->
+                            <div name=abc style="height: 100px;" class="shuJu flex1 baiSe yinying mgr8"></div>
+                            <div  style="height: 100px;"class="shuJu flex1 baiSe yinying mgr8 "></div>
+                            <div  style="height: 100px;"class="shuJu flex1 baiSe yinying mgr8"></div>
+                            <div  style="height: 100px;"class="shuJu flex1 baiSe yinying "></div>
+                        </div>
+                         <!--列表區-->
+                         <div class="flex column">
+                             <!--列表區3直分-->
 
-                    <h2>歐陽任耕大夫介紹</h2>
-
-<ul>
-    <li>家傳中醫第四代</li>
-    <li>脈學:
-        <ul>
-            <li>鑑湖五脈</li>
-            <li>萬壽永脈法</li>
-            <li>張氏脈法</li>
-            <li>漢方</li>
-            <li>中、日、韓氏美容針</li>
-        </ul>
-    </li>
-    <li>針灸:
-        <ul>
-            <li>董氏奇穴</li>
-            <li>修氏飛經走氣</li>
-            <li>孫派古法針灸</li>
-        </ul>
-    </li>
-    <li>傷科:
-        <ul>
-            <li>筋膜</li>
-            <li>硬傷</li>
-        </ul>
-    </li>
-</ul>
+                            <div  style="height: 100px;" class="baiSe yinying mgt8 ">
+                            
+                                                     
+                            
+                            </div>
+                            
 
 
-                 </p>
-    </div>
-    <div class="image">
-        <img src="pic1.png" alt="圖片描述">
-    </div>
-</div>
-
+                         </div>
+                    </div>
+                     <!--右區-->
+                     <div style="flex: 1;" class="youQu flex column mgr8 mgt8">
+                        <!--提示區-->
+                        <div style="height: 150px;" class="baiSe yinying"></div>
+                        <!--消息區-->
+                        <div style="height: 300px;" class="baiSe yinying mgt8"></div>
+                    </div>
         </div>
    
     </div>

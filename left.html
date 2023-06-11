@@ -40,10 +40,6 @@
         .mgt8{
             margin-top: 8px;
         }
-        .daodao{
-                color: inherit; /* 移除超連結顏色 */
-                text-decoration: none;  /* 移除超連結底線 */
-                 }
         .daohang{
             padding: 10px 20px;
             border-bottom: 1px solid rgb(130, 126, 126);
@@ -54,7 +50,6 @@
             color: inherit; /* 移除超連結顏色 */
             text-decoration: none;  /* 移除超連結底線 */
         }
-        
 
         @media(max-width:600px){
             .ceBian{
@@ -75,30 +70,6 @@
             }
         }
 
-        a {
-    text-decoration: none; /* 去除底線 */
-    color: #151515d6; /* 自訂文字顏色，這裡使用紅色(#FF0000)作為範例 */
-}
-.container {
-    width: 75%; /* 內容佔版面的3/4 */
-    margin: 0 auto; /* 將元素置中 */
-    font-size: 20px;
-    display: flex; /* 使用彈性盒模型排列內容 */
-}
-
-
-.text {
-    flex: 1; /* 文字區域佔滿剩餘的寬度 */
-}
-
-.image {
-    margin-left: 30px; /* 調整圖片與文字的間距，這裡設定為20像素 */
-}
-.image img {
-    width: 300px; /* 設定圖片的寬度為200像素 */
-    height: auto; /* 讓高度根據比例自動調整 */
-}
-
     </style>
 </head>
 <body class="flex">
@@ -112,14 +83,34 @@
                 <img src="logo.jpg" width="140px" height="140px" >
                 <div style="margin-left: 10px;">歐陽大夫</div>
             </div>
+            
             <!--導航攔-->
-            <div class="flex1" >
+            <div class="flex1">
+                <nav>
+                    <ul>
+                        <li><a href="#">電子商務</a></li>
+                        <li><a href="#">市場行銷</a></li>
+                        <li><a href="#">辦公室生產力</a></li>
+                        <li><a href="#">個人成長</a></li>
+                        <li><a href="#">設計</a></li>
+                        <li><a href="#">通訊工程與軟體</a></li>
+                    </ul>
+                </nav>
 
-                <div class="daohang" > <a href="./index.html">簡介</a> </div>
-                <div class="daohang" > <a href="./teach.html">教學資訊</a></div>
-                <div class="daohang">  <a href="./clinichour.html">門診時間</a> </div>
-                <div class="daohang">  <a href="./health.html">衛教影片</a> </div>
-                <div class="daohang">  <a href="./market.html">商場</a> </div>
+
+                <div class="daohang"> 
+
+                    <a style="text-decoration: none" href="https://www.youtube.com/embed/1MOutdeS2R0?list=PLDceDUQdKTG2tuQYMLZRr1Os2o9bOgaJi" src="./left.html">教學</a>
+
+                </div>
+                <div class="daohang"> 
+
+                    <a style="text-decoration: none" href="https://www.youtube.com/embed/1MOutdeS2R0?list=PLDceDUQdKTG2tuQYMLZRr1Os2o9bOgaJi"  src="./left.html">教學</a>
+
+                </div>
+                <div class="daohang">導航</div>
+                <div class="daohang">導航</div>
+                <div class="daohang">導航</div>
 
 
 
@@ -138,50 +129,18 @@
 
      <!--主區域-->
     <div class="flex1 flex column">
-      
+        <!--頭部欄-->
+        <div style="height: 60px;z-index: 1;" class="baiSe yinying"></div>
         <!--內容區-->
-        <div class="container" >
-                 
-<div class="container">
-    <div class="text">
-      <p>
+        <div style="overflow: auto;" class="neiRong flex1 flex">
+                     <!--左區-->
+                     <div  style="flex;" class="flex column mg8">
+                      
 
-                    <h2>歐陽任耕大夫介紹</h2>
+                        <p>影片專欄</p>
 
-<ul>
-    <li>家傳中醫第四代</li>
-    <li>脈學:
-        <ul>
-            <li>鑑湖五脈</li>
-            <li>萬壽永脈法</li>
-            <li>張氏脈法</li>
-            <li>漢方</li>
-            <li>中、日、韓氏美容針</li>
-        </ul>
-    </li>
-    <li>針灸:
-        <ul>
-            <li>董氏奇穴</li>
-            <li>修氏飛經走氣</li>
-            <li>孫派古法針灸</li>
-        </ul>
-    </li>
-    <li>傷科:
-        <ul>
-            <li>筋膜</li>
-            <li>硬傷</li>
-        </ul>
-    </li>
-</ul>
-
-
-                 </p>
-    </div>
-    <div class="image">
-        <img src="pic1.png" alt="圖片描述">
-    </div>
-</div>
-
+                        </div>
+                      
         </div>
    
     </div>
